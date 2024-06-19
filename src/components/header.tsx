@@ -4,7 +4,7 @@ import { SVGProps } from "react";
 export default function Header() {
   return (
     <div
-      className={`h-[10vh] px-4 lg:px-6 flex items-center sticky top-0 z-10 bg-lime-300`}
+      className={`h-[10vh] px-4 lg:px-6 flex items-center sticky top-0 z-10 bg-white`}
     >
       <Link
         href="/"

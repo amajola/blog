@@ -1,9 +1,13 @@
 // contentlayer.config.ts
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
+import rehypeHighlight from "rehype-highlight";
+import remarkGfm from "remark-gfm";
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: `**/*.md`,
+  filePathPattern: `**/*.mdx`,
+  contentDirPath: "posts",
+  contentType: "mdx",
   fields: {
     title: { type: "string", required: true },
     date: { type: "date", required: true },
@@ -15,4 +19,5 @@ export const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "./posts",
   documentTypes: [Post],
+  mdx: { rehypePlugins: [rehypeHighlight], remarkPlugins: [remarkGfm] },
 });

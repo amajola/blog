@@ -16,17 +16,19 @@ export default async function Home() {
     .slice(0, 3);
 
   return (
-    <div className={`grid grid-rows-5 h-[90dvh]`}>
+    <div className={`grid grid-rows-5 xl:h-[90dvh]`}>
       <section className="w-full row-span-2 flex items-center">
         <div className="container px-4 md:px-6 space-y-10 xl:space-y-16">
           <div className="flex flex-col justify-start space-y-10 xl:space-y-16">
             <div className="flex flex-col justify-start space-y-4">
               <h1 className="lg:leading-tighter text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
-                John Doe
+                Asimthande Majola
               </h1>
               <p className="max-w-[700px] text-start text-gray-500 md:text-xl dark:text-gray-400">
-                I&#39;m a software engineer and writer. I love building
-                beautiful and functional web applications.
+                {`I'm a programmer and fashion lover, I've created this site to document my journey into becoming a creative`}
+              </p>
+              <p className="max-w-[700px] text-start text-gray-500 text-sm dark:text-gray-400">
+                {"Welcome to my part of the internet"}
               </p>
             </div>
             <div className="flex flex-col items-start space-y-4">
@@ -58,8 +60,7 @@ export default async function Home() {
                 Latest Blog Posts
               </h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 text-start">
-                Check out my latest blog posts on software engineering, writing,
-                and more.
+                Check out my latest blog posts
               </p>
             </div>
           </div>
