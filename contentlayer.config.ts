@@ -1,6 +1,5 @@
 // contentlayer.config.ts
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 
 export const Post = defineDocumentType(() => ({
@@ -19,5 +18,5 @@ export const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "./posts",
   documentTypes: [Post],
-  mdx: { rehypePlugins: [rehypeHighlight], remarkPlugins: [remarkGfm] },
+  mdx: { remarkPlugins: [remarkGfm] },
 });
